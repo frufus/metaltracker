@@ -1,0 +1,23 @@
+@mixin PT-Regular() {
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin PT-Bold() {
+  font-family: "PT Serif Bold", serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin PT-Italic() {
+  font-family: "PT Serif Italic", serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin PT-BoldItalic() {
+  font-family: "PT Serif Bold Italic", serif;
+  font-style: normal;
+  font-weight: normal;
+}

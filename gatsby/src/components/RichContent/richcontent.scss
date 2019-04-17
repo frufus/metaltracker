@@ -1,0 +1,9 @@
+@import "@scss/util.scss";
+
+.m-richcontent {
+  margin: 0 auto;
+  padding: 10px;
+  width: span(12);
+  max-width: $max-width;
+  background-color: rgba($blue-mid, 0.8);
+}

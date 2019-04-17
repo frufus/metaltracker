@@ -1,0 +1,13 @@
+blockquote, .a-blockquote {
+  @include typo-blockquote;
+  color: $white;
+  padding-left: 10px;
+
+  p + &, .a-p + & {
+    margin-top: 10px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,92 @@
+@import "breakpoints";
+@import "fonts";
+
+@mixin typo-copy {
+  @include PT-Regular;
+  font-size: 18px;
+  line-height: 150%;
+
+  @include md {
+    font-size: 20px;
+  }
+}
+
+@mixin typo-blockquote {
+  @include PT-Italic;
+  font-size: 18px;
+  line-height: 150%;
+
+  @include md {
+    font-size: 20px;
+  }
+}
+
+@mixin typo-headline {
+  @include PT-Bold;
+
+  font-size: 36px;
+  line-height: 125%;
+
+  @include lg {
+    font-size: 48px;
+  }
+  @include xxl {
+    font-size: 60px;
+  }
+}
+
+@mixin typo-headline-medium {
+  @include PT-Bold;
+
+  font-size: 28px;
+  line-height: 125%;
+
+  @include lg {
+    font-size: 38px;
+  }
+  @include xxl {
+    font-size: 48px;
+  }
+}
+
+@mixin typo-headline-small {
+  @include PT-Bold;
+
+  font-size: 24px;
+  line-height: 125%;
+
+  @include lg {
+    font-size: 32px;
+  }
+  @include xxl {
+    font-size: 42px;
+  }
+}
+
+@mixin typo-nav {
+  @include PT-Regular;
+
+  font-size: 20px;
+  line-height: 100%;
+}
+
+@mixin typo-entry-title {
+  @include PT-Bold;
+
+  font-size: 25px;
+  line-height: 125%;
+
+  @include md {
+    font-size: 30px;
+  }
+}
+@mixin typo-entry-title-small {
+  @include PT-Bold;
+
+  font-size: 18px;
+  line-height: 125%;
+
+  @include md {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,8 @@
+p, .a-p {
+  @include typo-copy;
+  color: $white;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}

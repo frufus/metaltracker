@@ -1,0 +1,21 @@
+@import "util";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include PT-Regular();
+  font-size: 16px;
+  color: $white;
+  background-color: $blue-dark;
+
+  a {
+    color: $white;
+  }
+}
+
+// Atoms
+@import "atoms/h";
+@import "atoms/p";
+@import "atoms/blockquote";

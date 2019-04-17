@@ -1,0 +1,286 @@
+dateModified: 1552941717
+email:
+  fromEmail: hi@frufus.de
+  fromName: Metaltracker
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  2d618fc9-2221-44e8-bdff-e9392c81e1cc:
+    name: Common
+fields:
+  429579ee-fb8f-4d88-a84e-116b9809916f:
+    contentColumnType: datetime
+    fieldGroup: 2d618fc9-2221-44e8-bdff-e9392c81e1cc
+    handle: entryTime
+    instructions: ''
+    name: Einlass
+    searchable: true
+    settings:
+      minuteIncrement: '15'
+      showDate: false
+      showTime: true
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Date
+  47cad49f-b0d7-44e4-93ad-50ccdd3c3c78:
+    contentColumnType: string
+    fieldGroup: 2d618fc9-2221-44e8-bdff-e9392c81e1cc
+    handle: location
+    instructions: ''
+    name: Location
+    searchable: true
+    settings:
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      source: null
+      sources:
+        - 'section:f94b4bd6-baba-404d-b849-bc86132bec2e'
+      targetSiteId: null
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  4816c48c-332a-46ce-a115-2aa2d745034f:
+    contentColumnType: text
+    fieldGroup: 2d618fc9-2221-44e8-bdff-e9392c81e1cc
+    handle: info
+    instructions: ''
+    name: Info
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  b8d6cb13-b6a8-4abf-9bd1-d7759a1fe4ef:
+    contentColumnType: datetime
+    fieldGroup: 2d618fc9-2221-44e8-bdff-e9392c81e1cc
+    handle: date
+    instructions: ''
+    name: Datum
+    searchable: true
+    settings:
+      minuteIncrement: '15'
+      showDate: true
+      showTime: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Date
+  bd16dadd-a60c-4a0a-bbfd-0778dc9d7979:
+    contentColumnType: datetime
+    fieldGroup: 2d618fc9-2221-44e8-bdff-e9392c81e1cc
+    handle: startTime
+    instructions: ''
+    name: Beginn
+    searchable: true
+    settings:
+      minuteIncrement: '15'
+      showDate: false
+      showTime: true
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Date
+  fe223c11-d667-4501-a90a-208a06ba8b32:
+    contentColumnType: string
+    fieldGroup: 2d618fc9-2221-44e8-bdff-e9392c81e1cc
+    handle: bands
+    instructions: ''
+    name: Bands
+    searchable: true
+    settings:
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      source: null
+      sources:
+        - 'section:de4e7bb0-e81c-4b7f-9890-4975bfed83ab'
+      targetSiteId: null
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+plugins:
+  craftql:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.0
+    settings:
+      allowedHeaders:
+        - 'Authorization, Content-Type'
+      graphiqlFetchUrl: null
+      maxQueryComplexity: false
+      maxQueryDepth: false
+      uri: graphql
+      verbs:
+        - POST
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.2
+sections:
+  8c406daa-239c-463d-b61f-df728bb172b1:
+    enableVersioning: true
+    entryTypes:
+      5d808a2c-8c53-4456-b167-31a714852da4:
+        fieldLayouts:
+          2e1a9bd1-e062-4276-bf1c-0b54676e94a1:
+            tabs:
+              -
+                fields:
+                  429579ee-fb8f-4d88-a84e-116b9809916f:
+                    required: false
+                    sortOrder: 2
+                  47cad49f-b0d7-44e4-93ad-50ccdd3c3c78:
+                    required: false
+                    sortOrder: 4
+                  4816c48c-332a-46ce-a115-2aa2d745034f:
+                    required: false
+                    sortOrder: 6
+                  b8d6cb13-b6a8-4abf-9bd1-d7759a1fe4ef:
+                    required: false
+                    sortOrder: 1
+                  bd16dadd-a60c-4a0a-bbfd-0778dc9d7979:
+                    required: false
+                    sortOrder: 3
+                  fe223c11-d667-4501-a90a-208a06ba8b32:
+                    required: false
+                    sortOrder: 5
+                name: Allgemein
+                sortOrder: 1
+        handle: konzert
+        hasTitleField: true
+        name: Konzert
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Titel
+    handle: konzert
+    name: Konzert
+    propagateEntries: true
+    siteSettings:
+      6a5f47bb-5b15-40a7-9a68-f6ae84bfd26e:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'konzert/{slug}'
+    type: channel
+  de4e7bb0-e81c-4b7f-9890-4975bfed83ab:
+    enableVersioning: true
+    entryTypes:
+      cda32e24-cf93-4f9e-b825-d4f1167256cf:
+        fieldLayouts:
+          28731720-f73e-4e7d-a663-d9936cf7c8ef:
+            tabs:
+              -
+                fields:
+                  4816c48c-332a-46ce-a115-2aa2d745034f:
+                    required: false
+                    sortOrder: 1
+                name: Allgemein
+                sortOrder: 1
+        handle: band
+        hasTitleField: true
+        name: Band
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Titel
+    handle: band
+    name: Band
+    propagateEntries: true
+    siteSettings:
+      6a5f47bb-5b15-40a7-9a68-f6ae84bfd26e:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'band/{slug}'
+    type: channel
+  f94b4bd6-baba-404d-b849-bc86132bec2e:
+    enableVersioning: true
+    entryTypes:
+      32ce93f7-8513-4093-9136-38b0e3e99664:
+        fieldLayouts:
+          4c2b3a39-24ec-4d01-8822-8601cad71437:
+            tabs:
+              -
+                fields:
+                  4816c48c-332a-46ce-a115-2aa2d745034f:
+                    required: false
+                    sortOrder: 1
+                name: Allgemein
+                sortOrder: 1
+        handle: location
+        hasTitleField: true
+        name: Location
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Titel
+    handle: location
+    name: Location
+    propagateEntries: true
+    siteSettings:
+      6a5f47bb-5b15-40a7-9a68-f6ae84bfd26e:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'location/{slug}'
+    type: channel
+  373f3966-03cd-4d03-ad0a-94f854da87b8:
+    name: Seiten
+    handle: pages
+    type: single
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      6a5f47bb-5b15-40a7-9a68-f6ae84bfd26e:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: pages
+        template: ''
+    entryTypes:
+      64596810-72d5-4ea1-842b-e2dc16d14fdd:
+        name: Seiten
+        handle: pages
+        hasTitleField: false
+        titleLabel: null
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
+siteGroups:
+  994ea562-79a8-43bd-8470-33e6b6507103:
+    name: Metaltracker
+sites:
+  6a5f47bb-5b15-40a7-9a68-f6ae84bfd26e:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: de
+    name: Metaltracker
+    primary: true
+    siteGroup: 994ea562-79a8-43bd-8470-33e6b6507103
+    sortOrder: 1
+system:
+  edition: solo
+  live: true
+  name: Metaltracker
+  schemaVersion: 3.1.25
+  timeZone: Europe/Berlin
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true
+volumes:
+  767a55f8-eb16-42bb-a772-f4c9b7e3ecbc:
+    handle: uploads
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: /uploads/
+    sortOrder: 1
+    type: craft\volumes\Local
+    url: $DEFAULT_SITE_URL/uploads/

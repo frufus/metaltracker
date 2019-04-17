@@ -1,0 +1,23 @@
+@import "@scss/util.scss";
+
+.o-container {
+  position: relative;
+
+  &__main {
+    position: relative;
+    width: 100%;
+    padding: 0 $outer-padding-sm;
+
+    @include md {
+      padding: 0 $outer-padding-md;
+    }
+
+    @include lg {
+      padding: 0 $outer-padding-lg;
+    }
+
+    @include xl {
+      padding: 0 $outer-padding-xl;
+    }
+  }
+}

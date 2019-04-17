@@ -1,0 +1,11 @@
+@import "@scss/util.scss";
+
+.o-concertlist {
+  margin: 0 auto;
+  width: span(12);
+  max-width: $max-width;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+}

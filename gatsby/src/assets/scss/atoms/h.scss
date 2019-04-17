@@ -1,0 +1,17 @@
+h1, .a-h1 {
+  @include typo-headline;
+  color: $white;
+  margin-bottom: 15px;
+}
+
+h2, .a-h2 {
+  @include typo-headline-medium;
+  color: $white;
+  margin-bottom: 10px;
+}
+
+h3, h4, .a-h3, .a-h4 {
+  @include typo-headline-small;
+  color: $white;
+  margin-bottom: 5px;
+}
